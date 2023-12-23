@@ -1,0 +1,19 @@
+spring:
+  #数据库连接信息
+  datasource:
+    #指定数据库驱动类名，这里是 MySQL 的驱动类。
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #指定数据库连接 URL。
+    url: jdbc:mysql://localhost:3306/blossom_of_fortune_shopping_mall
+    #username 和 password 是数据库的用户名和密码。
+    username: root
+    password: 123456
+#Mybatis配置
+mybatis:
+  configuration:
+    #log-impl 指定 MyBatis 使用的日志实现类，这里是输出到控制台。
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #map-underscore-to-camel-case 设为 true 表示将数据库表字段的下划线
+    map-underscore-to-camel-case: true
+
+
