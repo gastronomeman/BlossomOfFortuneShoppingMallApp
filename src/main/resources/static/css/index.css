@@ -1,0 +1,239 @@
+
+/* 版心容器 */
+.layout {
+  width: 100%;
+  max-width: 640px;
+  /*min-width: 320px;*/
+  margin: 95px auto 0;
+  position: relative;
+}
+
+
+/* 轮播图 */
+.banner {
+  width: 90%;
+  margin: 10px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+}
+
+.bannerImg {
+  width: 1000%;
+  position: relative;
+  left: -100%;
+
+}
+
+.bannerImg > li {
+  /* width: 12.5%; */
+  width: 10%;
+  float: left;
+}
+
+.bannerImg > li img {
+  width: 100%;
+  display: block;
+}
+
+/* 指示器样式 */
+.bannerIndicator {
+  width: 128px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+}
+
+.bannerIndicator > li {
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  float: left;
+  margin-left: 10px;
+}
+
+.bannerIndicator > li:first-of-type {
+  margin-left: 0;  /* 重置第一个li的左边距为0 */
+}
+
+.bannerIndicator > li.active {
+  background-color: #fff;
+}
+
+/* 导航栏 */
+.nav {
+  margin: 10px auto;
+  border-radius: 20px;
+  width: 90%;
+  background-color: #fff;
+}
+
+
+.nav li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.nav li img {
+  width: 60px;
+}
+
+.nav li p {
+  line-height: 25px;
+}
+
+/* 商品区 */
+.product {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.product_box {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 1px #e0e0e0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+/* 秒杀区块 */
+/*.sk{  设置一个样式标记：秒杀块样式开始 }*/
+.sk .product_box_tit {
+  border-bottom: none;  /* 去除底部边框 */
+  padding-left: 0;
+}
+.ml{
+  margin-left: -5px;
+}
+.sk .sk_icon {
+  /* 秒杀图标 */
+  background: url("../img/IndexImage/seckill-icon.png") no-repeat;
+  background-size: 16px 20px;
+  width: 16px;
+  height: 20px;
+  float: left;
+  margin-top: 3px;
+}
+
+.sk .sk_name {
+  /* 秒杀文字 */
+  color: #d8505c;
+  font-size: 22px;
+  font-weight: bold;
+  float: left;
+  margin-top: -9px;
+}
+
+.sk .sk_time {
+  /* 秒杀时间 */
+  float: left;
+  margin-top: 12px;
+}
+
+.sk .sk_time span {
+  float: left;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  background: #FB3D2B;
+  color: #fff;
+  margin-left: 3px;
+  font-size: 22px;
+}
+
+.sk .sk_time span:nth-child(3n) {
+  background: transparent;
+  color: #333;
+  width: 5px;
+}
+
+
+/* 秒杀区块-主体内容 */
+.sk .product_box_con {
+  padding: 0 20px 20px 20px;
+
+}
+
+.sk .product_box_con > ul {
+  width: 100%;
+}
+
+.sk .product_box_con > ul > li {
+  width: 16.66%;
+  float: left;
+  text-align: center;
+}
+
+.sk .product_box_con > ul > li img {
+  width: 94%;
+  display: inline-block;
+  /* 清除文本基线，居中对齐 */
+}
+
+.sk .product_box_con > ul > li > p {
+  color: #d8505c;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+
+/* 产品区块样式代码 */
+.product_box > .product_box_tit {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 30px;
+  background: url("../img/IndexImage/轮播图/背景.png") no-repeat;
+  background-size: 100%;
+}
+
+.product_box > .product_box_tit > h3 {
+  position: relative;  /* 相对定位 */
+  color: #666;
+  /*font-weight: normal;*/
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* 通过给h3添加伪元素实现左边竖线 */
+.product_box > .product_box_tit > h3::before {
+  content: "";
+  position: absolute;  /* 绝对定位 */
+  width: 3px;
+  height: 20px;
+  background-color: #e92322;
+  top: 20px;
+  left: -8px;
+  
+}
+
+/* 产品图片超链接公共样式 */
+.w_50 {
+  display: block;
+  width: 50%;   /* 宽度为父容器的50% */
+}
+
+.w_50 > img {
+  width: 100%;
+  display: block;
+}
+
+.b_right {
+  border-right: 1px solid #ccc;
+}
+
+.b_bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+
